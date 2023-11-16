@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisnu Danuarta - Portofolio</title>
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/hobby">Hobby</a>
+            <a href="/education" class="active">Education</a>
+            <a href="/work">Work</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <img src="{{  url_for('static', filename='assets/bingkai.svg') }}" alt="" class="container-img">
+        <div class="content-co">
+            <img src="{{  url_for('static', filename='assets/unair.png') }}" class="circle-unair" alt="">
+            <div class="left-content">
+                <img src="{{  url_for('static', filename='assets/profile.png') }}" class="profile-img" alt="">
+                <p><span>Major :</span> <span>Data Science</span></p>
+                <p> <span>Undergraduate Level (S1)</span></p>
+                <div class="icon-co">
+                    <a href="https://instagram.com/wisnudanuarta_" target="_blank">
+                        <img src="{{  url_for('static', filename='assets/instagram.svg') }}" alt="">
+                    </a>
+                    <a href="https://github.com/waizsec" target="_blank">
+                        <img src="{{  url_for('static', filename='assets/github.svg') }}" alt="">
+                    </a>
+                    <a href="">
+                        <img src="{{  url_for('static', filename='assets/wa.svg') }}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="right-content">
+                <h1>Airlangga University</h1>
+                <p class="nim">
+                    <span class="line"></span>
+                    Data Science
+                </p>
+                <p class="about">                    
+                    Embarking on my Bachelor's Degree journey at Universitas Airlangga, I have chosen to delve into the captivating realm of Data Science. This academic pursuit not only represents a commitment to higher education but also signifies my passion for exploring the vast and dynamic field of data. The curriculum at Universitas Airlangga offers a comprehensive study path, equipping me with the knowledge and skills essential for navigating the complexities of data analysis, machine learning, and the ever-evolving landscape of information technology. As I venture into this academic endeavor, I am excited about the opportunities to engage with cutting-edge technologies and contribute to the innovative world of data-driven solutions. This educational journey promises not only a degree but also a profound understanding of data science's transformative power and its potential to shape the future.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

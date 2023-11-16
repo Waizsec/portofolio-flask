@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisnu Danuarta - Portofolio</title>
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/hobby">Hobby</a>
+            <a href="/education" >Education</a>
+            <a href="/work">Work</a>
+            <a href="/contact" class="active">Contact</a>
+        </div>
+        <img src="{{  url_for('static', filename='assets/bingkai2.svg') }}" alt="" class="container-img">
+        <div class="content-co">
+            <form action="/showform" method="POST" id="contactForm" class="form-email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your email address">
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Type your message here"></textarea>
+        
+                <button type="submit" class="send">Send</button>
+            </form>
+             <iframe class='maps'
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.75483445842!2d112.78166467499975!3d-7.268716192738245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa21a3515291%3A0x3edf1522ff735924!2sAirlangga%20University%20-%20Campus%20C!5e0!3m2!1sen!2sid!4v1700117048717!5m2!1sen!2sid"
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

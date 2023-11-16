@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisnu Danuarta - Portofolio</title>
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/hobby"  class="active">Hobby</a>
+            <a href="/education">Education</a>
+            <a href="/work">Work</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <img src="{{  url_for('static', filename='assets/bingkai.svg') }}" alt="" class="container-img">
+        <div class="content-co">
+            <img src="{{  url_for('static', filename='assets/circle-wisnu.svg') }}" class="circle-wisnu" alt="">
+            <div class="left-content">
+                <img src="{{  url_for('static', filename='assets/hobby.png') }}" class="profile-img" alt="">
+                <p><span>Stagename :</span> <span>Waiz</span></p>
+                <p><span>Role :</span> <span>Guitarist</span></p>
+                <p><span>Played Since :</span> <span>2011</span></p>
+                <div class="icon-co">
+                    <a href="https://instagram.com/wisnudanuarta_" target="_blank">
+                        <img src="{{  url_for('static', filename='assets/instagram.svg') }}" alt="">
+                    </a>
+                    <a href="https://github.com/waizsec" target="_blank">
+                        <img src="{{  url_for('static', filename='assets/github.svg') }}" alt="">
+                    </a>
+                    <a href="">
+                        <img src="{{  url_for('static', filename='assets/wa.svg') }}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="right-content">
+                <h1>Music Instrumentalist</h1>
+                <p class="nim">
+                    <span class="line"></span>
+                    Guitarist
+                </p>
+                <p class="about">                    
+                    From my early years as a child, the enchanting world of guitar melodies became an inseparable part of my life. I embarked on this musical journey, exploring the strings and chords with a sense of curiosity and wonder. Over the years, what began as a childhood fascination blossomed into a lifelong passion. The guitar has been my constant companion, witnessing the evolution of my skills and the deepening of my musical connection. From those humble beginnings, I've had the privilege of gracing various stages, where each performance becomes a unique chapter in my story. Playing the guitar is more than a skill; it's a journey of self-expression, creativity, and a testament to the enduring magic of music.
+                </p>
+                <div class="co-link">
+                    <a href="" target="_blank" class="github-link">
+                        My Song Will Be Coming Soon!
+                        <img src="{{  url_for('static', filename='assets/arrow.svg') }}" alt="">
+                    </a>
+                    <div class=""></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

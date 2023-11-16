@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisnu Danuarta - Portofolio</title>
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/hobby">Hobby</a>
+            <a href="/education">Education</a>
+            <a href="/work"  class="active">Work</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <img src="{{  url_for('static', filename='assets/bingkai.svg') }}" alt="" class="container-img">
+        <div class="content-co">
+            <div class="left-content">
+                <img src="{{  url_for('static', filename='assets/wearewaiz.png') }}" class="profile-company" alt="">
+                <p><span>Workplace :</span> <span>Wearewaiz</span></p>
+                <p><span>Role :</span> <span>Project Manager</span></p>
+                <p><span>Work Since :</span> <span>2020</span></p>
+                <div class="icon-co">
+                    <a href="https://instagram.com/wisnudanuarta_" target="_blank">
+                        <img src="{{  url_for('static', filename='assets/instagram.svg') }}" alt="">
+                    </a>
+                    <a href="https://github.com/waizsec" target="_blank">
+                        <img src="{{  url_for('static', filename='assets/github.svg') }}" alt="">
+                    </a>
+                    <a href="">
+                        <img src="{{  url_for('static', filename='assets/wa.svg') }}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="right-content">
+                <h1>Wearewaiz Workplace</h1>
+                <p class="nim">
+                    <span class="line"></span>
+                    Websites Developer
+                </p>
+                <p class="about">   
+                    Since 2020, I have been actively contributing to the dynamic landscape of web development as a dedicated member of the Wearewaiz team. In my role as a websites developer, I engage in crafting innovative and user-centric digital experiences. This journey with Wearewaiz has not only deepened my technical expertise but also allowed me to be part of a collaborative environment, shaping the online presence of various projects with creativity and precision.
+                </p>
+                <div class="co-link">
+                    <a href="https://wearewaiz.com" target="_blank" class="github-link">
+                        See Wearewaiz Company Profile
+                        <img src="{{  url_for('static', filename='assets/arrow.svg') }}" alt="">
+                    </a>
+                    <div class=""></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisnu Danuarta - Portofolio</title>
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="/" class="active">Home</a>
+            <a href="/hobby">Hobby</a>
+            <a href="/education">Education</a>
+            <a href="/work">Work</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <img src="{{  url_for('static', filename='assets/bingkai.svg') }}" alt="" class="container-img">
+        <div class="content-co">
+            <img src="{{  url_for('static', filename='assets/circle-wisnu.svg') }}" class="circle-wisnu" alt="">
+            <div class="left-content">
+                <img src="{{  url_for('static', filename='assets/profile.png') }}" class="profile-img" alt="">
+                <p><span>Hobby :</span> <span>Main Musik</span></p>
+                <p><span>Major :</span> <span>Data Science</span></p>
+                <p><span>Age :</span> <span>19</span></p>
+                <div class="icon-co">
+                    <a href="https://instagram.com/wisnudanuarta_" target="_blank">
+                        <img src="{{  url_for('static', filename='assets/instagram.svg') }}" alt="">
+                    </a>
+                    <a href="https://github.com/waizsec" target="_blank">
+                        <img src="{{  url_for('static', filename='assets/github.svg') }}" alt="">
+                    </a>
+                    <a href="">
+                        <img src="{{  url_for('static', filename='assets/wa.svg') }}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="right-content">
+                <h1>I KETUT ANDIKA WISNU <br> DANUARTA</h1>
+                <p class="nim">
+                    <span class="line"></span>
+                    162112133115
+                </p>
+                <p class="about">
+                    Wisnu here! I'm not just your ordinary guy; I'm a Bali-based tech enthusiast with a
+                    passion that goes beyond the limits of technology. I've been diving deep into the world
+                    of software engineering for over 4 years, and I'm also on an exciting journey to master
+                    the art of data science. Whether it's coding, data analysis, or designing beautiful front-end
+                    apps, I'm all in. If you have something interesting to discuss or collaborate on, feel free
+                    to hit me up!
+                </p>
+                <div class="opsi-lain">
+                    <p>Other Related Link : </p>
+                    <a href="getdata">Data Retriver</a>
+                    <a href="showdata">Show Data</a>
+                    <a href="fibonacci/12">Fibonacci (Ubah angka url setelah /fibbonacci/)</a>
+                </div>
+                <div class="co-link">
+                    <a href="https://github.com/Waizsec/Portofolio.git" target="_blank" class="github-link">
+                        Check Github Repo
+                        <img src="{{  url_for('static', filename='assets/arrow.svg') }}" alt="">
+                    </a>
+                    <div class=""></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

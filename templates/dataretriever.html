@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Data Retrieval - Wisnu Danuarta</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/data.css') }}">
+    <link rel="icon" type="image/ico" href="{{  url_for('static', filename='assets/fav.svg') }}">
+</head>
+
+<body>
+    <div class="co-atas">
+        <img src="{{  url_for('static', filename='assets/layout.svg') }}" alt="" srcset="">
+        <div class="co-content">
+            <h1>Data Retrieval</h1>
+            <div class="form-co">
+                <input type="text" id="url-input" placeholder="Insert Url Here...">
+                <button id="fetch-button">Fetch Data</button>
+            </div>
+            <div class="table-co">
+                <div class="sec-con">
+                    <table id="data-table" class="font-normal">
+                        <thead class="">
+                            <tr class="font-custom bg-custom">
+                                <th>id</th>
+                                <th>F_Name</th>
+                                <th>L_Name</th>
+                                <th>email</th>
+                                <th>email2</th>
+                                <th>profesi</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{  url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

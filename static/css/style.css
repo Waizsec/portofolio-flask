@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'typewriter';
+    src: url('../assets/American\ Typewriter\ Regular.ttf') format('truetype');
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'typewriter';
+}
+
+body {
+    background-color: #fbf9ef;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: none;
+}
+
+.container-img {
+    width: 85vw;
+    position: absolute;
+}
+
+.content-co {
+    display: flex;
+    width: 85vw;
+    height: 44vw;
+    margin-top: 7.5vw;
+    z-index: 2;
+    position: relative;
+}
+
+.left-content {
+    height: 100%;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vw;
+}
+
+.left-content p {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+    font-size: 1.2vw;
+}
+
+.left-content p span {
+    font-weight: 700;
+}
+
+.profile-img {
+    width: 70%;
+    margin-bottom: 4vw;
+}
+.profile-company {
+    width: 60%;
+    margin-bottom: 2vw;
+}
+
+.icon-co,
+.icon-co a {
+    border: none;
+    text-decoration: none;
+    margin-top: 3vw;
+    z-index: 3;
+}
+
+.icon-co a img {
+    height: 2.4vw;
+    cursor: pointer;
+}
+
+.right-content {
+    height: 100%;
+    width: 79%;
+    padding-top: 4vw;
+    position: relative;
+}
+
+.right-content h1 {
+    font-size: 3vw;
+    padding-left: 5vw;
+}
+
+.line {
+    width: 30%;
+    height: 0.2vw;
+    margin-right: 1vw;
+    background-color: black;
+}
+
+.nim {
+    padding-left: 5vw;
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    font-size: 1.3vw;
+}
+
+.about {
+    padding-left: 5vw;
+    width: 70%;
+    margin-top: 1vw;
+    font-size: 1vw;
+    line-height: 2vw;
+}
+
+.circle-wisnu {
+    position: absolute;
+    right: 4vw;
+    top: 3vw;
+    width: 12vw;
+    animation: rotate 10s linear infinite;
+}
+.circle-unair {
+    position: absolute;
+    right: 2vw;
+    top: 3vw;
+    width: 10vw;
+}
+
+.co-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6vw;
+    position: absolute;
+    bottom: 8vw;
+}
+
+
+.co-link div {
+    width: 75%;
+    height: 5.2vw;
+    border: 0.4vw solid black;
+    right: 9%;
+    top: -0.6vw;
+    position: absolute;
+    border-radius: 0.4vw;
+    background-color: none;
+}
+
+.github-link {
+    width: 80%;
+    height: 6vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2vw;
+    color: white;
+    border-radius: 0.4vw;
+    z-index: 3;
+    transition: 0.4s ease;
+}
+
+.github-link:hover {
+    transform: translate(1vw, -0.6vw);
+}
+
+.github-link img {
+    width: 8%;
+    margin-left: 2vw;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 5.7vw;
+    left: 36vw;
+    font-size: 1.2vw;
+}
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-right: 2vw;
+    z-index: 10;
+
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    top: 1.7vw;
+    width: 0;
+    height: 0.1vw; /* Set the height of the underline */
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease; /* Adjust the transition duration as needed */
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.navbar a.active::before {
+    width: 100%;
+}
+
+.form-email{
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+.form-email label{
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
+#email{
+    background: none;
+    border: none;
+    border-bottom: 0.1vw solid black;
+    padding-bottom: 0.3vw;
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+    width: 30vw;
+}
+#message{
+    background: none;
+    border: none;
+    border-bottom: 0.1vw solid black;
+    padding-bottom: 0.3vw;
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+    width: 30vw;
+    height: 20vw;
+}
+
+.send{
+    background-color: black;
+    font-size: 1vw;
+    color: white;
+    height: 3vw;
+    border: none;
+    border-radius: 0.3vw;
+    cursor: pointer;
+}
+*:focus {
+    outline: none;
+  }
+
+.maps{
+    width: 40vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border: 0;
+}
+
+.opsi-lain{
+    display: flex;
+    padding-left: 5vw;
+    margin-top: 1vw;
+}
+.opsi-lain a{
+    margin-left: 1vw;
+}
