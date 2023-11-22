@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Number</title>
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% if fibonacci_sequence %}
+    <div class="form-fibonacci">
+        <h1>Fibonacci Result:</h1>
+        <p>{{ fibonacci_sequence }}</p>
+        <a href="/fibonacci">Back</a>
+    </div>
+    {% else %}
+    <form class="form-fibonacci" method="post" action="{{ url_for('fibonacci') }}">
+        <h1>Input Fibonacci Length</h1>
+        <input type="number" name="jumlah" value="0" min="0">
+    </form>   
+    {% endif %}
+</body>
+</html>

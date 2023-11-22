@@ -280,3 +280,41 @@ body {
 .opsi-lain a{
     margin-left: 1vw;
 }
+
+.form-fibonacci{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-fibonacci h1{
+    color: white;
+    font-size: 2vw;
+}
+.form-fibonacci input{
+    background: none;
+    width: 30vw;
+    height: 5vw;
+    font-size: 1.6vw;
+    color: white;
+    margin-top: 2vw;
+    padding-left: 4vw;
+}
+
+.form-fibonacci p{
+    color: white;
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+}
+
+.form-fibonacci a{
+    color: black;
+    background: white;
+    padding: 0.6vw 2vw;
+    font-size: 1.2vw;
+    margin-top: 1.5vw;
+
+}

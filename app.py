@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from getcsv2json import showdata
 from fibonaci import show_fibonacci
+from pujakerangajaib import generate_random_message
 
 app = Flask(__name__)
 
@@ -43,10 +44,14 @@ def retrieve_data():
     return render_template('dataretriever.html')
 
 
-@app.route('/fibonacci/<int:n>')
-def fibonacci(n):
-    fibonacci_sequence = show_fibonacci(n)
-    return f"{n} Deret Fibonacci adalah: {fibonacci_sequence}"
+@app.route('/fibonacci', methods=['GET', 'POST'])
+def fibonacci():
+    if request.method == 'POST':
+        n = int(request.form['jumlah'])
+        fibonacci_sequence = show_fibonacci(n)
+        return render_template('fibonacci.html', fibonacci_sequence=fibonacci_sequence)
+    else:
+        return render_template('fibonacci.html', fibonacci_sequence=None)
 
 
 @app.route('/showform', methods=['GET', 'POST'])
@@ -57,6 +62,24 @@ def showform():
         return f'Email: {email}, Message: {message}'
     else:
         return '<a href="/">Invalid Request, Go Back To Previous Site</a>'
+
+
+@app.route('/pujakerangajaib', methods=['GET', 'POST'])
+def pujakerangajaib():
+    if request.method == 'POST':
+        message = f"Selamat datang, {request.form['name']}, anda berhasil masuk ke Puja Kerang Ajaib"
+    else:
+        name_param = request.args.get('name')
+        name = name_param or "Spongebob"
+        message = generate_random_message(name)
+
+    message = message.title()
+    return render_template('pujakerangajaib.html', message=message)
+
+
+@app.route('/pujakerangajaib/req', methods=['GET', 'POST'])
+def pujakerangajaibreq():
+    return render_template('pujakerangajaibreq.html')
 
 
 if __name__ == "__main__":
